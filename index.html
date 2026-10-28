@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>richjon rizaldo Portfolio</title>
+
+    <style>
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #545155;
+            color: #807b7f;
+            line-height: 1.6;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* ===== HEADER & NAV ===== */
+        .site-header {
+            background-color: #dcdbdf;
+            color: rgb(180, 173, 179);
+            text-align: center;
+            padding: 20px 15px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .site-header h1 {
+            font-size: 28px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .site-header nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px 20px;
+        }
+
+        .site-header nav a {
+            color: rgb(17, 16, 16);
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .site-header nav a:hover {
+            background-color: rgb(193, 190, 197);
+            color: #7c373f;
+        }
+
+        /* ===== LAYOUT ===== */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .card {
+            background-color: rgb(91, 48, 51);
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            scroll-margin-top: 110px;
+        }
+
+        .card h2 {
+            color: #aba4a5;
+            margin-bottom: 15px;
+            border-bottom: 2px solid rgb(101, 96, 101);
+            padding-bottom: 5px;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            background-color: rgb(115, 115, 139);
+            text-align: center;
+            padding: 30px 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .profile-picture {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgb(43, 33, 108);
+        }
+
+        .tagline {
+            color: #5943b1;
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* ===== ABOUT ===== */
+        .about-list {
+            padding-left: 20px;
+        }
+
+        .about-list li {
+            margin-bottom: 12px;
+        }
+
+        /* ===== SKILLS ===== */
+        .section-intro {
+            margin-bottom: 15px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background-color: rgb(114, 114, 131);
+            color: #2358ab;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            color: #182d68;
+            font-size: 14px;
+        }
+
+        /* ===== PROJECTS ===== */
+        .project {
+            background-color: #fff0f5;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .project-img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 8px;
+            border: 3px solid pink;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>Richjonn Rizaldo</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">My Skills</a>
+            <a href="#goal">My Goal</a>
+            <a href="#projects">My Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section id="home" class="card">
+            <h2>Home</h2>
+
+            <div class="hero">
+                <img src="Rizaldo/PF (2).jpeg" alt="RIch John Rizaldo" class="profile-picture">
+
+                <p class="tagline">
+                    #ANOTHER dAY ANOTHER DISKARTE
+                </p>
+            </div>
+
+            <p>
+                Hello! I'm richjon rizaldo,im IT student who wants to finish my studiesand give back to
+                my family.iwant to learn new knowledge and develop my potential to keep improving my skills,
+
+
+            </p>
+        </section>
+
+        <section id="about" class="card">
+            <h2>About Me</h2>
+
+            <ul class="about-list">
+                <li>
+                    I am an IT student who is determined to learn
+                    the lessons taught by my teachers. Even when
+                    learning takes me extra time, I keep trying
+                    and do my best to improve.
+                </li>
+
+                <li>
+                    I enjoy dancing hihop iwant to become a dancer soon more confident at it.
+                </li>
+
+                <li>
+                    My family is one of my biggest motivations.
+                    I want to finish my education and give back
+                    to my beloved mother for her sacrifices and
+                    hard work in supporting my studies.
+                </li>
+            </ul>
+        </section>
+
+        <section id="skills" class="card">
+            <h2>My Skills</h2>
+
+            <p class="section-intro">
+                These are the skills and activities I enjoy
+                practicing and improving.
+            </p>
+
+            <div class="skills">
+                <span class="skill">dancing</span>
+                <span class="skill"> coding</span>
+                <span class="skill">computer technician</span>
+                <span class="skill">basketball</span>
+                <span class="skill">busienssman</span>
+            </div>
+        </section>
+
+        <section id="goal" class="card">
+            <h2>My Goal</h2>
+
+            <p>
+                My biggest goal is to graduate, build a better
+                future, and help my mother so she can enjoy the
+                life she has worked so hard for. I know I still
+                have a lot to learn, but I am willing to work hard
+                and take things one step at a time.
+            </p>
+        </section>
+
+        <section id="projects" class="card">
+            <h2>My Projects</h2>
+
+            <div class="project">
+                <img src="Rizaldo/TBL.jpeg" alt="Project for Sir Clarence" class="project-img">
+                <p>
+                    This is my project table cellspacing and cellspadding in information management.
+                </p>
+            </div>
+
+            <div class="project">
+                <img src="Rizaldo/RFcode.jpeg" alt="Project portfolio" class="project-img">
+                <p>
+                    my code in registration form from information management
+                </p>
+            </div>
+
+            <div class="project">
+                <img src="Rizaldo/RF.jpeg" alt="Registration form" class="project-img">
+                <p>
+                    This is the registration form you assigned us,
+                    ma'am, for additional grade.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact Me</h2>
+
+            <p class="section-intro">
+                Feel free to reach out to me through these:
+            </p>
+
+            <ul class="contact-list">
+                <li><strong>IG:</strong> richjon</li>
+                <li><strong>FB:</strong> Richjon Rizzaldo</li>
+                <li>
+                    <strong>Email:</strong>
+                    <a href="mailto:Richjon Rizaldo6@gmail.com">richjon rizaldo6@gmail.com</a>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>© 2026 RIzaldo | My Personal Portfolio</p>
+        </footer>
+
+    </main>
+</body>
+</html>
